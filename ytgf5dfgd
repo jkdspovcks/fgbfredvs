@@ -1,3 +1,14 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("//NEW// OP Blox Fruit Inf Money Script I Made by flexsz#7677 ", "Synapse")
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Auto-Farm")
+
+
+MainSection:NewButton("Blox Fruit Inf Money", "Fast Money Farm", function()
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "SIGMA BOY!"; Text = "USE FLEXSZ SCRIPTS!"; Icon = "http://www.roblox.com/asset/?id=9597859601"; Duration = 10})
+wait(0.7)
+
 function thisCode()
     repeat task.wait() until game:IsLoaded()
 	game:service'ReplicatedStorage'.Remotes.CommF_:InvokeServer("SetTeam","Pirates");
@@ -145,4 +156,22 @@ function thisCode()
 
 end
 
-thisCode()
+thisCode() end)
+
+
+
+MainSection:NewButton("Anti Ban", "if you click this button you won't be banned", function()
+
+end)
+
+
+
+local Credit = Window:NewTab("Credit")
+
+local CreditSection = Credit:NewSection("By flexsz#7677")
+
+CreditSection:NewButton("Click For Discord Server", "https://discord.com/invite/ZKFEzk3JbE", function()
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Copied!"; Text = "PASTE IT ON SEARCH !"; Icon = "http://www.roblox.com/asset/?id=9597859601"; Duration = 10})
+	wait(0.7)
+	setclipboard("https://discord.com/invite/ZKFEzk3JbE")                       end)
+
